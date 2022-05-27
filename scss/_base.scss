@@ -1,0 +1,127 @@
+$color-primary: #c69963;
+$color-primary-dark: #b28451;
+
+$color-secondary: #101d2c;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$color-grey-dark-1: #54483a;
+$color-grey-dark-2: #6d5d4b;
+
+$dark-jungle-green: hsl(188, 63%, 7%);
+$prussian-blue: hsl(200, 69%, 14%);
+$raisin-black-1: hsl(227, 29%, 13%);
+$raisin-black-2: hsl(229, 17%, 19%);
+$yellow-green: hsl(89, 72%, 45%);
+$orange-soda: hsl(9, 100%, 62%);
+$cultured-1: hsl(0, 0%, 93%);
+$cultured-2: hsl(192, 24%, 96%);
+$misty-rose: hsl(7, 56%, 91%);
+$alice-blue: hsl(210, 100%, 97%);
+$seashell: hsl(8, 100%, 97%);
+$cadet: hsl(200, 15%, 43%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$opal: hsl(180, 20%, 62%);
+$bg-colour: rgba($color-primary, 0.2);
+
+// BREAKPOINTS FOR MEDIA QUERIES
+
+$shadow-1: 0 5px 20px 0 hsla(219, 56%, 21%, 0.1);
+$shadow-2: 0 16px 32px hsla(188, 63%, 7%, 0.1);
+
+$bp-largest: 75em;
+$bp-large: 62.5em;
+$bp-mid-large: 65.5em;
+$bp-meduim: 50em;
+$bp-small: 37.5em;
+// $bp-lrage:
+
+// FONT VARIABLES
+$font-primary: "Nunito", sans-serif;
+$font-display: "Josefin Sans", sans-serif;
+//TYPOGRAPHY VARIABLES
+$font-size-small: 1.4rem;
+$font-size-meduim: 1.6rem;
+$font-size-mid-large: 2.5rem;
+$font-size-large: 2rem;
+$font-size-larger: 3.5rem;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  font-family: $font-primary;
+  color: $color-grey-dark-1;
+  background: $color-grey-light-1;
+}
+// GLOBAL LINK DESIGN
+a {
+  text-decoration: none;
+  text-transform: capitalize;
+  display: inline-block;
+  &:hover {
+    color: currentColor;
+  }
+}
+// GLOBAL BUTTON DESIGN
+.btns {
+  border: none;
+  background: transparent;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  background: $color-primary;
+  border: 1px solid $color-secondary;
+  transition: 0.2s;
+  &:hover {
+    background: transparent;
+  }
+}
+// GLOBAL TYPOGRAPHY
+.heading-2 {
+  text-transform: capitalize;
+  font-size: 4rem;
+  padding-top: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  @media screen and (max-width: $bp-small) {
+    font-size: $font-size-large;
+  }
+}
+.heading-4 {
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: $font-size-large;
+  font-family: $font-display;
+  color: $color-secondary;
+  transition: all 0.2s;
+  margin: 1.5rem 0 0.5rem 0;
+  @media screen and (max-width: $bp-small) {
+    font-size: $font-size-meduim;
+  }
+}
+.heading-5 {
+  font-size: $font-size-large;
+  margin-top: 1.5rem;
+  text-transform: capitalize;
+}
+.heading-6 {
+  font-size: $font-size-meduim;
+  font-family: $font-display;
+  text-transform: uppercase;
+  background-color: $bg-colour;
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 2.5rem;
+  border-radius: 10rem;
+  color: $color-secondary;
+  font-weight: 700;
+}

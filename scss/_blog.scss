@@ -1,0 +1,51 @@
+@mixin grid {
+  display: flex;
+  justify-content: space-between;
+}
+.blog {
+  &__div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    column-gap: 5rem;
+    margin: 5rem;
+    @media screen and (max-width: $bp-small) {
+      margin: 2rem;
+    }
+  }
+  &__card {
+    background: $misty-rose;
+    box-shadow: $shadow-2;
+
+    margin: 3rem 0;
+    font-family: $font-display;
+  }
+  &__padding--div {
+    padding: 0 2rem;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__details {
+    @include grid;
+    margin-top: 2rem;
+    font-size: $font-size-meduim;
+  }
+
+  &__footer {
+    @include grid;
+    font-size: $font-size-small;
+    border-top: 1px solid $color-primary-dark;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+  }
+  &__link {
+    color: $color-primary-dark;
+  }
+  &__mainnav {
+    display: block;
+    text-align: center;
+    margin: 4rem;
+    font-size: $font-size-large;
+    color: $color-primary;
+  }
+}

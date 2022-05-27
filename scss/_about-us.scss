@@ -1,0 +1,100 @@
+.about-us {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(39%, 100%), 1fr));
+  column-gap: 5rem;
+  margin: 10rem 5rem;
+  @media screen and (max-width: $bp-small) {
+    padding: 0 1rem;
+    margin: 2rem;
+  }
+  &__img {
+    // position: relative;
+    @media screen and (max-width: $bp-largest) {
+      display: none;
+    }
+  }
+  &__image {
+    width: 100%;
+    display: grid;
+    display: block;
+  }
+  &__image-2 {
+    // position: absolute;
+    width: 50%;
+    // height: 30%;
+    margin-top: -30rem;
+    // bottom: 12%;
+    // right: 50%;
+    // object-fit: cover;
+  }
+  &__main-heading {
+    text-align: start;
+  }
+  &__maintext {
+    font-size: $font-size-meduim;
+    margin: 1rem 0;
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-large;
+    }
+    @media screen and (max-width: $bp-small) {
+      font-size: $font-size-meduim;
+    }
+  }
+  &__icon-div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    font-size: $font-size-meduim;
+    margin: 3rem 0;
+    i {
+      background: $bg-colour;
+      color: $color-primary-dark;
+      padding: 1rem;
+      border-radius: 50%;
+    }
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-large;
+    }
+    @media screen and (max-width: $bp-small) {
+      font-size: $font-size-meduim;
+    }
+  }
+  &__icon-items {
+    margin-bottom: 1.5rem;
+  }
+  &__subtext {
+    font-size: $font-size-meduim;
+    background: $bg-colour;
+    padding: 1.5rem;
+    border-left: 3px solid $color-primary-dark;
+    margin-top: 2.5rem;
+    i {
+      color: $color-primary-dark;
+      &:not(:last-child) {
+        margin-right: 0.3rem;
+      }
+    }
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-large;
+    }
+    @media screen and (max-width: $bp-large) {
+      max-width: 95%;
+      font-size: $font-size-large;
+    }
+    @media screen and (max-width: $bp-small) {
+      font-size: $font-size-meduim;
+    }
+  }
+  &__btn {
+    margin: 1.5rem 0;
+    padding: 1rem;
+    border: 2px solid $color-secondary;
+    font-size: $font-size-large;
+    @media screen and (max-width: $bp-largest) {
+      font-size: $font-size-small;
+    }
+    @media screen and (max-width: $bp-large) {
+      font-size: $font-size-large;
+    }
+  }
+}
