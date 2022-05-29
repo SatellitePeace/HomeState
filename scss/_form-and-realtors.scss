@@ -33,7 +33,7 @@
     color: $color-secondary;
     margin: 3rem 0 1.5rem 0;
     @media screen and (max-width: $bp-small) {
-      font-size: $font-size-large;
+      font-size: $font-size-larger;
     }
   }
   &__input {
@@ -81,7 +81,7 @@
   &__realtors {
     box-shadow: $shadow-2;
     padding: 2rem 4rem;
-    margin: 4.5em;
+    margin: 4.5rem;
     @media screen and (max-width: $bp-small) {
       margin: 2rem;
       padding: 2rem;
