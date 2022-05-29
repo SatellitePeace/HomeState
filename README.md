@@ -3,7 +3,7 @@
 a. html5  (for structure)
 b. scss (for design and organization)
 c. css grid (for layout)
-#d. splide jshttps://splidejs.com/  (for the carousel in the properties section)
+# d. splide js https://splidejs.com/  (for the carousel in the properties section)
 e. boostrap (for the small tablet and small screen navbar / also used it partially to style the text in the navbar)
 #NOTABLE MENTIONS
 # i used google fonts to for some of the fonts in the services card and properties card
