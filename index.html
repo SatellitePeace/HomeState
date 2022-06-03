@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nester||RealEstate</title>
+    <title>Nest||RealEstate</title>
     <!-- GOOGLE FONTS LINK -->
     <link
       href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/css/themes/splide-sea-green.min.css">
 <!-- CSS LINK -->
 <!-- FAVICON -->
-<link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+<link rel="shortcut icon" href="./images/nesthomes-logos_transparent.png" type="image/x-icon">
     <link rel="stylesheet" href="../dist/csss/main.css" />
   </head>
   <body>
@@ -54,7 +54,7 @@ add listing
         </button>
       </div>
       <nav class="mainnav">
-<img src="./images/logo.png" alt="logo image" class="mainnav__logo">
+<img src="./images/nesthomes-logos_black.png" alt="logo image" class="mainnav__logo">
 <ul class="mainnav__nav">
 <li class="mainnav__item"><a href="#home" class="mainnav__link">home</a></li>
 <li class="mainnav__item"><a href="#about" class="mainnav__link">about</a></li>
@@ -65,11 +65,11 @@ add listing
 <div class="mainnav__socials">
  <a href="#form" class="mainnav__social" > <i class="bi bi-search"></i></a>
   <!-- <div class="dropdown"> -->
-  <a class="dropdown-toggle mainnav__social" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class=" mainnav__social" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
      <i class="bi bi-person-circle" ></i>
   </a>
 
-  <ul class="dropdown-menu p-5 bg-danger" aria-labelledby="dropdownMenuLink">
+  <ul class="dropdown-menu p-5" aria-labelledby="dropdownMenuLink">
     <li><a class="dropdown-item text-dark fs-3 fw-bold" href="#">LOG IN</a></li>
     <br>
     <li><a class="dropdown-item text-dark fs-3 fw-bold" href="#">SIGN UP</a></li>
@@ -198,7 +198,7 @@ find your dream home
         </div>
 <div class="splide__slide--price">
   <h5 class="splide__slide--heading-5 heading-5">$1,000,000</h5>
- <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+ <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">  <i class="bi bi-cart-plus-fill "></i></a>
 </div>
 <h4 class="splide__slide--heading-5 fw-bold">
   modern bungalow
@@ -245,7 +245,7 @@ find your dream home
         </div>
 <div class="splide__slide--price">
   <h5 class="splide__slide--heading-5 heading-5">$1000k/month</h5>
- <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+ <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">  <i class="bi bi-cart-plus-fill"></i></a>
 </div>
 <h4 class="splide__slide--heading-5 fw-bold">
 family apartments
@@ -292,7 +292,7 @@ family apartments
         </div>
 <div class="splide__slide--price">
   <h5 class="splide__slide--heading-5 heading-5">$2.300,000</h5>
- <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+ <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">  <i class="bi bi-cart-plus-fill"></i></a>
 </div>
 <h4 class="splide__slide--heading-5 fw-bold">
   waterfront cozy home
@@ -339,7 +339,7 @@ family apartments
         </div>
 <div class="splide__slide--price">
   <h5 class="splide__slide--heading-5 heading-5">$600,000/month</h5>
- <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+ <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">  <i class="bi bi-cart-plus-fill"></i></a>
 </div>
 <h4 class="splide__slide--heading-5 fw-bold">
   industrial warehouse
@@ -386,7 +386,7 @@ newly built multipurpose warehouse with multiple parking spaces.
         </div>
 <div class="splide__slide--price">
   <h5 class="splide__slide--heading-5 heading-5">$3,000,000</h5>
- <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+ <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">  <i class="bi bi-cart-plus-fill"></i></a>
 </div>
 <h4 class="splide__slide--heading-5 fw-bold">
   modern 1 storey
@@ -432,7 +432,7 @@ newly built multipurpose warehouse with multiple parking spaces.
         </div>
 <div class="splide__slide--price">
   <h5 class="splide__slide--heading-5 heading-5">$4,000,000/year</h5>
- <a href="#">  <i class="bi bi-cart-plus-fill"></i></a>
+ <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">  <i class="bi bi-cart-plus-fill"></i></a>
 </div>
 <h4 class="splide__slide--heading-5 fw-bold">
  office building
@@ -729,17 +729,18 @@ newly built multipurpose warehouse with multiple parking spaces.
       </footer>
 
       <!-- <div class="smallnav "> -->
-        <nav class="navbar navbar-light fixed-bottom">
+        <nav class="navbar navbar-light fixed-bottom px-5 py-0">
           <div class="container">
-            <a class="navbar-brand fs-2 fw-bold" href="#form">
+            <a class="navbar-brand fs-2 text-center " href="#form">
                <i class="bi bi-search"></i>
-  <span class="mainnav__icons--text">search</span>
+  <p class="mainnav__icons--text">search</p>
             </a>
    <div class="dropup">
-   <a class="dropdown-toggle mainnav__social" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+   <a class="navbar-brand fs-2 text-center" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
      <i class="bi bi-person-circle" ></i>
+  <p class="mainnav__icons--text">profile</p>
   </a>
-  <ul class="dropdown-menu p-5 bg-danger" aria-labelledby="dropdownMenuLink">
+  <ul class="dropdown-menu p-5 " aria-labelledby="dropdownMenuLink">
     <li><a class="dropdown-item fw-bold fs-2 text-dark" href="#">LOG IN</a></li>
     <br>
     <li><a class="dropdown-item fw-bold fs-2 text-dark" href="#">SIGN UP</a></li>
@@ -750,13 +751,13 @@ newly built multipurpose warehouse with multiple parking spaces.
   </ul>
  </div>
 
-   <a class="navbar-brand fs-2 fw-bold" href="#" >
+   <a class="navbar-brand fs-2 text-center" href="#" >
                <i class="bi bi-cart4"></i>
-  <span class="mainnav__icons--text">cart</span>
+  <p class="mainnav__icons--text">cart</p>
             </a>
             </a>
             <button
-              class="navbar-toggler bg-dark"
+              class="navbar-toggler bg-dark "
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarNav"
@@ -790,7 +791,25 @@ newly built multipurpose warehouse with multiple parking spaces.
           </div>
         </nav>
       <!-- </div> -->
-      <!-- ========================================================================
+      <!-- ======================================================================== -->
+<!-- MODAL INFO FOR PROPERTIES SECTION CART -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-2 text-dark fw-bold" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body fs-3 text-success">
+        You Successfully Added Property To Cart ✅✅✅
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger fs-4">Remove</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- END OF MODAL -->
       <!-- below is  end of main div for enite body -->
     </main>
 <!-- BOOTSRAP -->

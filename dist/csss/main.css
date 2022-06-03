@@ -618,7 +618,11 @@ a:hover {
 }
 
 .mainnav__logo {
-  height: 3rem;
+  display: block;
+  width: 23%;
+  height: 5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .mainnav__nav {
@@ -698,6 +702,16 @@ a:hover {
   .navbar {
     display: none;
   }
+}
+
+.mainnav__icons--text {
+  margin-bottom: -0.3rem;
+  font-size: 1.4rem;
+  color: black;
+}
+
+.dropdown-menu {
+  background: #b28451;
 }
 
 .splide__slide--img-container img {
