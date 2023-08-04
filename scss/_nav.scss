@@ -1,17 +1,17 @@
 .toplinks {
   background: $color-secondary;
   color: $color-primary;
-  padding: 1rem 5rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
-  gap: 3rem;
+  padding: 1.5rem 7rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   place-items: center;
   font-size: $font-size-meduim;
   text-transform: capitalize;
   @media screen and (max-width: $bp-small) {
     grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
     font-size: $font-size-small;
-    padding: 1rem;
+    padding: 1.5rem 2.5rem;
   }
   &__socials {
     font-size: 2rem;
@@ -42,36 +42,35 @@
 .mainnav {
   position: sticky;
   top: 0;
+  left: 0;
   background: $color-primary-dark;
   color: $color-secondary;
-  padding: 1.3rem 3rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  justify-content: center;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 1.1rem 7rem;
   z-index: 10000;
   &__logo {
-    display: block;
-    width: 23%;
-    height: 5rem;
-    object-fit: cover;
+    flex: 1;
+    font-size: var($font-size-large);
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: 700;
+
   }
   &__nav {
     list-style: none;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
-    column-gap: 2rem;
-    @media screen and (max-width: $bp-large) {
-      grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-    }
+    display: flex;
+    gap: 2rem;
+    flex: 1;
   }
   &__link {
     color: $color-secondary;
     font-size: $font-size-large;
-    display: inline-block;
+    font-weight: 600;
     transition: all 0.2s;
     &:hover {
-      color: black;
+     box-shadow: 2px 2px 2px #c69963;
     }
     @media screen and (max-width: $bp-large) {
       font-size: $font-size-meduim;
@@ -80,6 +79,7 @@
   &__socials {
     color: $color-primary;
     text-align: end;
+    flex: 1;
   }
   &__social {
     background: $color-secondary;
